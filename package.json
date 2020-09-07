@@ -1,0 +1,28 @@
+{
+  "name": "insomnia-plugin-nicepay",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baddwin/insomnia-plugin-nicepay.git"
+  },
+  "license": "MIT",
+  "insomnia": {
+    "name": "insomnia-plugin-nicepay",
+    "displayName": "Nicepay Plugin",
+    "description": "Generate preReq data for query",
+    "publisher": {
+      "name": "Slamet Badwi",
+      "icon": ""
+    },
+    "applications": {
+      "designer": "*",
+      "core": "*",
+      "cli": "*"
+    }
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  },
+  "devDependencies": []
+}
