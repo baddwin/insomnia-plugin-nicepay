@@ -43,6 +43,10 @@ module.exports.templateTags = [{
 
         //Generate merchantToken//
         var merchantData = timeStamp + iMid + refno + amt + mkey;
+        if (!amt) {
+            merchantData = timeStamp + refno + iMid + mkey;
+        }
+
         var merchantToken = cryptlib.SHA256(merchantData).toString(cryptlib.enc.Hex);
 
         return merchantToken;
